@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MineBasic/MineBasic.iml" filepath="$PROJECT_DIR$/MineBasic/MineBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MineBasicProject.iml" filepath="$PROJECT_DIR$/MineBasicProject.iml" />
+    </modules>
+  </component>
+</project>
+
