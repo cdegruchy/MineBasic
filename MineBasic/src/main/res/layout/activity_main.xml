@@ -4,4 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/my_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:onClick="onBtnClicked">
+    </Button>
+
+    <WebView
+        android:layout_width="700px"
+        android:layout_height="800px"
+        android:id="@+id/webView"
+        android:layout_gravity="center" />
+</FrameLayout>
