@@ -1,5 +1,9 @@
 package craig.samples.minebasic;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -12,6 +16,7 @@ import android.view.ViewGroup;
 import android.os.Build;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -28,6 +33,42 @@ public class MainActivity extends ActionBarActivity {
             web.loadUrl("http://www.google.com");
             web.reload();
         }
+    }
+
+    public void onFullscreenClicked(View v){
+        startActivity(new Intent("android.intent.action.SECOND"));
+    }
+
+    public void onDialogClicked(View v){
+        showDialog(0);
+    }
+
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        switch (id) {
+            case 0:
+                return new AlertDialog.Builder(this)
+                        .setIcon(R.drawable.ic_launcher)
+                        .setTitle("This is a dialog with some simple text...")
+            .setPositiveButton("OK",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton)
+                        {
+                            Toast.makeText(getBaseContext(),
+                                    "OK clicked!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+            )
+                    .setNegativeButton("Cancel",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    Toast.makeText(getBaseContext(),
+                                            "Cancel clicked !",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                    ).create();
+        }
+        return null;
     }
 
     @Override

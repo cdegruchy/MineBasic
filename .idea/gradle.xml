@@ -4,7 +4,7 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="C:\Program Files (x86)\Android\android-studio\sdk\samples\android-19" />
+        <option name="externalProjectPath" value="C:\Program Files (x86)\Android\android-studio\sdk" />
       </GradleProjectSettings>
     </option>
   </component>
