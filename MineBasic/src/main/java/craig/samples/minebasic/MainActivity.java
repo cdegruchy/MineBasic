@@ -35,6 +35,9 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
+    public void onGrooveClicked(View v){
+        startActivity(new Intent("android.intent.action.GROOVE"));
+    }
     public void onFullscreenClicked(View v){
         startActivity(new Intent("android.intent.action.SECOND"));
     }

@@ -35,6 +35,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="craig.samples.minebasic.GroovyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.GROOVE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
